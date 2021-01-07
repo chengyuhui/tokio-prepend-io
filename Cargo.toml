@@ -1,0 +1,17 @@
+[package]
+name = "tokio-prepend-io"
+license = "MIT"
+version = "0.1.0"
+authors = ["Harry Cheng <chengyuhui1@gmail.com>"]
+repository = "https://github.com/chengyuhui/tokio-prepend-io"
+edition = "2018"
+description = "Wrapper types that prepends data when reading or writing with AsyncRead or AsyncWrite."
+categories = ["asynchronous"]
+
+[dependencies]
+tokio = { version = "1", features =["rt", "macros", "io-util"] }
+bytes = "1"
+futures = "0.3"
+
+[dev-dependencies]
+tokio-test = "0.4.0"
